@@ -44,7 +44,6 @@
 		2B1C25EF29E4A50200666CB2 = {
 			isa = PBXGroup;
 			children = (
-				2BE742CC2A71A23800C7ACF3 /* RandomValues.swift */,
 				2B1C25FA29E4A50200666CB2 /* Randomizer */,
 				2B1C25F929E4A50200666CB2 /* Products */,
 			);
@@ -61,6 +60,7 @@
 		2B1C25FA29E4A50200666CB2 /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
+				2BE742CE2A71BBB400C7ACF3 /* Models */,
 				2BE742C92A719B4D00C7ACF3 /* Storyboards */,
 				2BE742CB2A719BF200C7ACF3 /* Lifecycle */,
 				2BE742CA2A719BB600C7ACF3 /* ViewControllers */,
@@ -95,6 +95,14 @@
 				2B1C25FB29E4A50200666CB2 /* AppDelegate.swift */,
 			);
 			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		2BE742CE2A71BBB400C7ACF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BE742CC2A71A23800C7ACF3 /* RandomValues.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
