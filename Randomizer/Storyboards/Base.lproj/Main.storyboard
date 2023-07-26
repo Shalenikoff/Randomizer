@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zrG-cq-3AE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zrG-cq-3AE">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,7 +82,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="ltF-Nv-T4R"/>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="P1m-lX-3DR">
                             <connections>
-                                <segue destination="tIp-eL-GnD" kind="presentation" id="Yhn-pb-GgH"/>
+                                <segue destination="sLE-ag-EJx" kind="presentation" id="Itx-xg-Xud"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -96,12 +97,25 @@
             </objects>
             <point key="canvasLocation" x="798" y="4"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DhL-4L-Rdr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sLE-ag-EJx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CxQ-HK-g0h">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1k-dS-u6i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="4"/>
+        </scene>
         <!--Settings View Controller-->
         <scene sceneID="oMn-tv-Ywe">
             <objects>
                 <viewController id="tIp-eL-GnD" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZFu-wX-HyN">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="5CJ-Xa-7WS">
@@ -162,7 +176,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayp-2g-oHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="8Ov-gZ-3pf" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1527.9069767441861" y="3.8626609442060089"/>
+            <point key="canvasLocation" x="2680" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KZP-45-9pY">
