@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SettingsViewControllerDelegate {
+    func setNewValues(for randomNumber: RandomNumber)
+}
+
 class MainViewController: UIViewController {
     
     
@@ -28,10 +32,23 @@ class MainViewController: UIViewController {
         guard let navigationVC = segue.destination as? UINavigationController else { return }
         guard let settingsVC = navigationVC.topViewController as? SettingsViewController else { return }
         settingsVC.randomNumber = randomNumber
+        settingsVC.delegate = self
     }
     
     @IBAction func getRandomNumberButtonTapped() {
         randomValueLabel.text = randomNumber.getRandom.formatted()
     }
+    
+}
+
+//MARK: SettingsViewControllerDelegate
+
+extension MainViewController: SettingsViewControllerDelegate {
+    func setNewValues(for randomNumber: RandomNumber) {
+        minimumValueLabel.text = randomNumber.minimumValue.formatted()
+        maximumValueLabel.text = randomNumber.maximumValue.formatted()
+        self.randomNumber = randomNumber
+    }
+    
     
 }
