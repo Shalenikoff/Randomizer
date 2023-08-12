@@ -12,7 +12,7 @@ struct RandomNumber {
     var minimumValue: Int
     
     var getRandom: Int {
-        Int.random(in: maximumValue...minimumValue)
+        Int.random(in: minimumValue...maximumValue)
     }
 }
 

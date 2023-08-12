@@ -79,9 +79,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Random number" id="H6W-hB-z5U">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="P1m-lX-3DR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="P1m-lX-3DR">
                             <connections>
-                                <segue destination="6Te-yM-Itw" kind="show" id="eCq-y4-LHp"/>
+                                <segue destination="6Te-yM-Itw" kind="presentation" id="jxg-mG-yMJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -94,18 +94,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="3"/>
+            <point key="canvasLocation" x="933" y="3"/>
         </scene>
         <!--Settings-->
         <scene sceneID="oMn-tv-Ywe">
             <objects>
-                <viewController id="tIp-eL-GnD" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="tIp-eL-GnD" customClass="SettingsViewController" customModule="Randomizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZFu-wX-HyN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="5CJ-Xa-7WS">
-                                <rect key="frame" x="60" y="148" width="294" height="116"/>
+                                <rect key="frame" x="60" y="116" width="294" height="116"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Minimum Value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0KI-dp-Gf6">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="34"/>
@@ -142,8 +142,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="maxValueTF" destination="ON5-3t-96R" id="d7M-i8-1FK"/>
-                        <outlet property="minValueTF" destination="0KI-dp-Gf6" id="Y0j-pj-EG5"/>
+                        <outlet property="maximumValueTF" destination="ON5-3t-96R" id="AQP-A2-78G"/>
+                        <outlet property="mininumValueTF" destination="0KI-dp-Gf6" id="vja-VE-bog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayp-2g-oHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -178,7 +178,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="E7w-bX-Yr2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="e3L-6h-o71">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
